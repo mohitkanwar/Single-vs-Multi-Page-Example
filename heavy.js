@@ -7,14 +7,11 @@
  * 
  * WELL, IF YOU LIKE YOU MAY COPY IT ON YOUR OWN RISK.
  */
-function heavy(){
-    setTimeout(show(),3000);
-}
+
+
 function show(){
     var x = document.getElementsByClassName("d-none");
-    for(var i=0;i<x.length;i++){
-        setTimeout(x[i].classList.remove("d-none"),1000);
-        
-    }
+        x[0].classList.remove("d-none");
 }
-heavy();
+setTimeout(show,2000);
+setTimeout(show,3000);
